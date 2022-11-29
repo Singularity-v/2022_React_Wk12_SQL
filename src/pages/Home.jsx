@@ -6,18 +6,14 @@ import ProductList from "../components/ProductList";
 import { useProducts } from '../react-query';
 const { Header, Content, Footer } = Layout;
 
-let contentForSkeleton = [];
-for(let i = 0; i < 11; i ++)
-  contentForSkeleton.push({id: i})
-
 function Home() {
 
   const { categoryName } = useParams();
   const url = categoryName || "";
   const { data, isLoading } = useProducts(url);
-  const products = data?.data || contentForSkeleton;
+  const products = data?.data || [];
   const title = url === ""
-    ? "Heart Stopper"
+    ? "NORDIC NEST Shopping Cart"
     : products[0]?.category.toUpperCase();
 
   return (

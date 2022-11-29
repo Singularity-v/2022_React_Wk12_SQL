@@ -15,7 +15,7 @@ export default function Header({ title, isLoading }) {
 
                <p
                   className="header-slogan">
-                  Mad by
+                  An example made by Create-React-App.
                </p>
             </div>
 

@@ -8,18 +8,16 @@ function ProductDetail({ product, isLoading }) {
    const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
 
    return (
-      <Row gutter={[32, 32]}>
-         <Col xs={{ span: 20, offset: 2 }} lg={{ span: 6, offset: 2 }}>
-            <Skeleton loading={isLoading} active>
+      <Skeleton loading={isLoading}>
+         <Row gutter={[32, 32]}>
+            <Col xs={{ span: 20, offset: 2 }} lg={{ span: 6, offset: 2 }}>
                <img
                   alt={product.name}
                   className="product-image"
                   src={product.image}
                />
-            </Skeleton>
-         </Col>
-         <Col xs={{ span: 20, offset: 2 }} lg={{ span: 14, offset: 0 }} >
-            <Skeleton loading={isLoading} active >
+            </Col>
+            <Col xs={{ span: 20, offset: 2 }} lg={{ span: 14, offset: 0 }} >
                <div className="product-info--detail">
                   <h2 className="product-category">
                      {product.category}
@@ -55,9 +53,9 @@ function ProductDetail({ product, isLoading }) {
                      <AddToCart product={product} qty={qty} />
                   </div>
                </div>
-            </Skeleton>
-         </Col>
-      </Row>
+            </Col>
+         </Row>
+      </Skeleton>
    );
 }
 

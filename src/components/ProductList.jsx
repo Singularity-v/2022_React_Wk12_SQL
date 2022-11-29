@@ -5,25 +5,21 @@ import ProductItem from "./ProductItem";
 export default function ProductList({ products, isLoading }) {
 
   return (
-    <Row gutter={[32, 32]}>
-
-      {products.map(product => (
-        <Col
-          key={product.id}
-          sm={{ span: 12 }}
-          lg={{ span: 8 }}
-          xl={{ span: 6 }}
-          xxl={{ span: 4 }}
-        >
-          <Skeleton 
-            loading={isLoading} 
-            avatar round paragraph={{ rows: 4 }} active>
+    <Skeleton loading={isLoading}>
+      <Row gutter={[32, 32]}>
+        {products.map(product => (
+          <Col
+            key={product.id}
+            sm={{ span: 12 }}
+            lg={{ span: 8 }}
+            xl={{ span: 6 }}
+            xxl={{ span: 4 }}
+          >
             <ProductItem product={product} />
-          </Skeleton>
-        </Col>
-      ))}
-
-    </Row>
+          </Col>
+        ))}
+      </Row>
+    </Skeleton>
   );
 }
 

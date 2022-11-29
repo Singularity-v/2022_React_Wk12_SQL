@@ -3,17 +3,17 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <div className="nav-bar">
-            <NavLink to="/products/category/solo"
+            <NavLink to="/products/category/tableware"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Solo
+                Tableware
             </NavLink>
-            <NavLink to="/products/category/group"
+            <NavLink to="/products/category/cookware"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Group
+                Cookware
             </NavLink>
-            <NavLink to="/products/category/couple"
+            <NavLink to="/products/category/home-accessories"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Couple
+                Home accessories
             </NavLink>
             <NavLink to="/products/category/lighting"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
