@@ -3,29 +3,21 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <div className="nav-bar">
-            <NavLink to="/products/category/tableware"
+            <NavLink to="/products/category/solo"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Tableware
+                Solo
             </NavLink>
-            <NavLink to="/products/category/cookware"
+            <NavLink to="/products/category/group"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Cookware
+                Group
             </NavLink>
-            <NavLink to="/products/category/home-accessories"
+            <NavLink to="/products/category/Couple"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Home accessories
+                Couple
             </NavLink>
-            <NavLink to="/products/category/lighting"
+            <NavLink to="/products/category/sences"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Lighting
-            </NavLink>
-            <NavLink to="/products/category/textile"
-                className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Textile
-            </NavLink>
-            <NavLink to="/products/category/furniture"
-                className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Furniture
+                Sences
             </NavLink>
         </div>
     );

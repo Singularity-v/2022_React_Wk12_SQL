@@ -5,6 +5,11 @@ import CartSummary from "./CartSummary";
 export default function Header({ title, isLoading }) {
    return (
       <div className="header">
+         <img
+            alt=""
+            className="header-image"
+            src="https://www.streamingdigitally.com/wp-content/uploads/2022/04/heartstopper.jpg"
+         />
          <div className="header-wrap">
             <div className="header-text">
                <Link to="/">
@@ -13,18 +18,8 @@ export default function Header({ title, isLoading }) {
                   </h1>
                </Link>
 
-               <p
-                  className="header-slogan">
-                  An example made by Create-React-App.
-               </p>
-            </div>
-
-            <div className="header-right">
-               <CartSummary />
             </div>
          </div>
-
-         <hr className="hr-header-line" />
          <NavBar />
       </div>
    );

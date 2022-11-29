@@ -13,7 +13,7 @@ function Home() {
   const { data, isLoading } = useProducts(url);
   const products = data?.data || [];
   const title = url === ""
-    ? "NORDIC NEST Shopping Cart"
+    ? "Heart Stopper"
     : products[0]?.category.toUpperCase();
 
   return (
