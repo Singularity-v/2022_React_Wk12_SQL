@@ -7,8 +7,8 @@ import { Provider } from "react-redux";
 import { CookiesProvider } from 'react-cookie';
 
 import Home from './pages/Home'
-import Product from './pages/Product'
-import store from './redux/store';
+import Actor from './pages/Actor'
+// import store from './redux/store';
 
 const queryClient = new QueryClient()
 
@@ -16,17 +16,17 @@ function App() {
   return (
     <CookiesProvider>
       <QueryClientProvider client={queryClient}>
-        <Provider store={store}>
+        {/* <Provider store={store}> */}
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="products">
                 <Route path="category/:categoryName" element={<Home />} />
-                <Route path="id/:productId" element={<Product />} />
+                <Route path="id/:productId" element={<Actor />} />
               </Route>
             </Routes>
           </BrowserRouter>
-        </Provider>
+        {/* </Provider> */}
       </QueryClientProvider>
     </CookiesProvider>
 

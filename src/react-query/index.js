@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
-import { getProductById, getProducts } from "../api";
+import { getActorById, getActors } from "../api";
 
-export const useProducts = (url) => {
-   const { data, isLoading } = useQuery([url], getProducts)
+export const useActors = (url) => {
+   const { data, isLoading } = useQuery([url], getActors)
    return { data, isLoading };
 };
 
-export const useProductById = (productId) => {
-   const { data, isLoading } = useQuery([productId], getProductById)
+export const useActortById = (productId) => {
+   const { data, isLoading } = useQuery([productId], getActorById)
    return { data, isLoading };
 }

@@ -1,6 +1,5 @@
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom"
-import CartSummary from "./CartSummary";
 
 export default function Header({ title, isLoading }) {
    return (
