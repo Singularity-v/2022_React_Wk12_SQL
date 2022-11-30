@@ -9,8 +9,8 @@ import { useActortById } from '../react-query';
 const { Header, Content, Footer } = Layout;
 
 function Product() {
-   const { productId } = useParams();
-   const { data, isLoading } = useActortById(productId);
+   const { actorId } = useParams();
+   const { data, isLoading } = useActortById(actorId);
    const actor = data || {};
 
    return (

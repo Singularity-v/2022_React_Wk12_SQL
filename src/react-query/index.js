@@ -6,7 +6,7 @@ export const useActors = (url) => {
    return { data, isLoading };
 };
 
-export const useActortById = (productId) => {
-   const { data, isLoading } = useQuery([productId], getActorById)
+export const useActortById = (actorId) => {
+   const { data, isLoading } = useQuery([actorId], getActorById)
    return { data, isLoading };
 }

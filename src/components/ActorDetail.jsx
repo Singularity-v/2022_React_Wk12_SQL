@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Row, Col, Select, Skeleton } from "antd";
 
 function ActorDetail({ actor, isLoading }) {
@@ -7,26 +6,26 @@ function ActorDetail({ actor, isLoading }) {
       <Skeleton loading={isLoading}>
          <img
             alt={actor.name}
-            className="product-image"
+            className="actor-image"
             src={actor.image}
          />
          <Row gutter={[32, 32]} style={{marginTop:"30px"}}>
             <Col xs={{ span: 20, offset: 2 }} lg={{ span: 12, offset: 0 }} >
-               <div className="product-info--detail">
-                  <h2 className="product-category">
+               <div className="actor-info--detail">
+                  <h2 className="actor-category">
                      {actor.category}
                   </h2>
-                  <h1 className="product-name product-name--large">
+                  <h1 className="actor-name actor-name--large">
                      {actor.name}
                   </h1>
-                  <p className="product-description">{actor.description_long}</p>
+                  <p className="actor-description">{actor.description_long}</p>
                </div>
             </Col>
             <Col xs={{ span: 20, offset: 2 }} lg={{ span: 10, offset: 1 }}>
                <img
                alt={actor.name}
-               className="product-intro-image"
-               src={actor.sku}
+               className="actor-intro-image"
+               src={actor.image_2}
                />
             </Col>
          </Row>

@@ -3,25 +3,25 @@ import { Link } from 'react-router-dom';
 
 export default function ActorItem({ actor }) {
     return (
-        <Card className="bg-gray product">
-            <Link to={`/products/id/${actor.id}`}>
+        <Card className="bg-gray actor">
+            <Link to={`/actors/id/${actor.id}`}>
                 <img
                     style={{ width: '100%' }}
                     src={actor.image}
                     alt={actor.name} />
             </Link>
-            <div className="product-info">
-                <h6 className="product-category">
+            <div className="actor-info">
+                <h6 className="actor-category">
                     {actor.category}
                 </h6>
-                <h2 className="product-name">
+                <h2 className="actor-name">
                     {actor.name}
                 </h2>
-                <p className="product-description">
+                <p className="actor-description">
                     {actor.description}
                 </p>
-                <div className="product-more">
-                    <Link to={`/products/id/${actor.id}`} className="product-link">
+                <div className="actor-more">
+                    <Link to={`/actors/id/${actor.id}`} className="actor-link">
                         What's More ...
                     </Link>
                 </div>

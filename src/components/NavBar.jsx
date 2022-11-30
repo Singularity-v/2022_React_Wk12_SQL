@@ -3,19 +3,19 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <div className="nav-bar">
-            <NavLink to="/products/category/solo"
+            <NavLink to="/actors/category/solo"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
                 Solo
             </NavLink>
-            <NavLink to="/products/category/group"
+            <NavLink to="/actors/category/group"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
                 Group
             </NavLink>
-            <NavLink to="/products/category/Couple"
+            <NavLink to="/actors/category/Couple"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
                 Couple
             </NavLink>
-            <NavLink to="/products/category/sences"
+            <NavLink to="/actors/category/sences"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
                 Sences
             </NavLink>
