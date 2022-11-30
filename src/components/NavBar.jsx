@@ -15,9 +15,9 @@ export default function NavBar() {
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
                 Couple
             </NavLink>
-            <NavLink to="/actors/category/sences"
+            <NavLink to="/actors/category/scenes"
                 className={(navData) => (navData.isActive ? 'nav-item nav-item--active' : 'nav-item')}>
-                Sences
+                Scenes
             </NavLink>
         </div>
     );
